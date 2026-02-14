@@ -95,7 +95,8 @@ function endSlideshow() {
   video.play();
 
   video.onended = () => {
-    videoScene.classList.remove("active");
-    finalScene.classList.add("active");
-  };
-}
+  videoScene.classList.remove("active");
+  finalScene.classList.add("active");
+  document.getElementById("pressLink").style.display = "inline-block";
+};
+
